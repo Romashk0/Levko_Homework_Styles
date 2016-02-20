@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Levko Homework Styles</string>
+    <string name="text_description">Please enter the numbers in the field, and press the button with the operation you need.</string>
 </resources>

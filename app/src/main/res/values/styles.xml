@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextDescription" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/text_textView_description</item>
+        <item name="android:textColor">@color/colorTextDescription</item>
+    </style>
+    "
+
 </resources>
