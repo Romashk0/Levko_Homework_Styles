@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String sFirstNumber = edt1.getText().toString();
         String sSecondNumber = edt2.getText().toString();
         if (TextUtils.isEmpty(sFirstNumber) || TextUtils.isEmpty(sSecondNumber)) {
-            Toast.makeText(this, "dddd", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please, enter the number", Toast.LENGTH_SHORT).show();
         } else {
             int a = Integer.parseInt(sFirstNumber);
             int b = Integer.parseInt(sSecondNumber);
