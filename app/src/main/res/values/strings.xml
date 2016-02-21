@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Levko Homework Styles</string>
     <string name="text_description">Please enter the numbers in the field, and press the button with the operation you need.</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="zero">0</string>
+    <string name="text_editText">Enter the number</string>
+    <string name="text_result">You will see the result</string>
 </resources>

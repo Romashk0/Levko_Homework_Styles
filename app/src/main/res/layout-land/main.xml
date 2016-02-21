@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorLayout">
 
     <TextView
         android:id="@id/tv_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_description" />
+        style="@style/styleTextView"
+        android:text="@string/text_description"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/styleEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_description"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+    <EditText
+        android:id="@+id/editText2"
+        style="@style/styleEditText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_description"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:id="@id/btnMinus"
+        style="@style/styleButton"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editText2"
+        android:layout_marginRight="@dimen/margin_Button_land"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@id/btnPlus"
+        style="@style/styleButton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/editText"
+        android:layout_marginLeft="@dimen/margin_Button_land"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/plus" />
+
+    <TextView
+        android:id="@+id/tv_results"
+        style="@style/styleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/text_result"
+        android:textSize="@dimen/text_textView_results" />
 </RelativeLayout>

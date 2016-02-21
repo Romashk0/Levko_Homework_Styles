@@ -8,10 +8,32 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="TextDescription" parent="TextAppearance.AppCompat.Medium">
+    <style name="styleTextView" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textSize">@dimen/text_textView_description</item>
         <item name="android:textColor">@color/colorTextDescription</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
     </style>
-    "
 
+    <style name="styleEditText" parent="Theme.AppCompat.DialogWhenLarge">
+        <item name="android:background">@color/colorEditTextBackground</item>
+        <item name="android:textSize">@dimen/text_editText</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:hint">@string/text_editText</item>
+
+        <item name="android:textColorHint">@color/colorEditText_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/text_editText</item>
+    </style>
+
+    <style name="styleButton" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:background">@color/colorButtonBackground</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:layout_width">@dimen/button_size</item>
+        <item name="android:layout_height">@dimen/button_size</item>
+        <item name="android:textColor">@color/colorTextButton</item>
+
+    </style>
 </resources>
