@@ -13,7 +13,7 @@
         android:layout_marginRight="@dimen/activity_horizontal_margin"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edt"
         style="@style/styleEditText"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/tv_description"
@@ -21,7 +21,7 @@
         android:layout_marginTop="@dimen/activity_vertical_margin" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edt2"
         style="@style/styleEditText"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tv_description"
@@ -32,7 +32,7 @@
         android:id="@id/btnMinus"
         style="@style/styleButton"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/editText2"
+        android:layout_below="@id/edt2"
         android:layout_marginRight="@dimen/margin_Button_land"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:text="@string/minus" />
@@ -41,7 +41,7 @@
         android:id="@id/btnPlus"
         style="@style/styleButton"
         android:layout_alignParentLeft="true"
-        android:layout_below="@id/editText"
+        android:layout_below="@id/edt"
         android:layout_marginLeft="@dimen/margin_Button_land"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:text="@string/plus" />

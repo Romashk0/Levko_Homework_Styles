@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     public Button btnPlus, btnMinus;
-    public EditText editText1, editText2;
+    public EditText edt1, edt2;
     public TextView tv_results;
 
 
@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnPlus = (Button) findViewById(R.id.btnPlus);
         btnMinus = (Button) findViewById(R.id.btnMinus);
-        editText1 = (EditText) findViewById(R.id.editText);
-        editText2 = (EditText) findViewById(R.id.editText2);
+        edt1 = (EditText) findViewById(R.id.edt);
+        edt2 = (EditText) findViewById(R.id.edt2);
         tv_results = (TextView) findViewById(R.id.tv_results);
         btnPlus.setOnClickListener(this);
         btnMinus.setOnClickListener(this);
@@ -32,8 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        int a = Integer.parseInt(String.valueOf(editText1.getText()));
-        int b = Integer.parseInt(String.valueOf(editText2.getText()));
+        int a = Integer.parseInt(String.valueOf(edt1.getText()));
+        int b = Integer.parseInt(String.valueOf(edt2.getText()));
+
         switch (v.getId()) {
             case R.id.btnPlus:
                 tv_results.setText((a + b) + "");
